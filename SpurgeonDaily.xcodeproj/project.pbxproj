@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB545B1229425320006D31AD /* SpurgeonDailyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB545B1129425320006D31AD /* SpurgeonDailyApp.swift */; };
+		DB545B1429425320006D31AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB545B1329425320006D31AD /* ContentView.swift */; };
+		DB545B1629425322006D31AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB545B1529425322006D31AD /* Assets.xcassets */; };
+		DB545B1929425322006D31AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB545B1829425322006D31AD /* Preview Assets.xcassets */; };
+		DB545B2B29427226006D31AD /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB545B2A29427225006D31AD /* WidgetKit.framework */; };
+		DB545B2D29427226006D31AD /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB545B2C29427226006D31AD /* SwiftUI.framework */; };
+		DB545B3029427226006D31AD /* SpurgeonDailyWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB545B2F29427226006D31AD /* SpurgeonDailyWidgetBundle.swift */; };
+		DB545B3229427226006D31AD /* SpurgeonDailyWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB545B3129427226006D31AD /* SpurgeonDailyWidgetLiveActivity.swift */; };
+		DB545B3429427226006D31AD /* SpurgeonDailyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB545B3329427226006D31AD /* SpurgeonDailyWidget.swift */; };
+		DB545B3729427229006D31AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB545B3629427229006D31AD /* Assets.xcassets */; };
+		DB545B3929427229006D31AD /* SpurgeonDailyWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DB545B3529427226006D31AD /* SpurgeonDailyWidget.intentdefinition */; };
+		DB545B3A29427229006D31AD /* SpurgeonDailyWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DB545B3529427226006D31AD /* SpurgeonDailyWidget.intentdefinition */; };
+		DB545B3D29427229006D31AD /* SpurgeonDailyWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DB545B2829427225006D31AD /* SpurgeonDailyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DB8A73962A09777A00613260 /* quotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = DB8A73952A09777A00613260 /* quotes.txt */; };
+		DB8A73972A09777A00613260 /* quotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = DB8A73952A09777A00613260 /* quotes.txt */; };
+		DB8A73992A09777F00613260 /* quotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = DB8A73982A09777F00613260 /* quotes.txt */; };
+		DB8A739A2A09777F00613260 /* quotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = DB8A73982A09777F00613260 /* quotes.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB545B3B29427229006D31AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB545B0629425320006D31AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB545B2729427225006D31AD;
+			remoteInfo = SpurgeonDailyWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DB545B4129427229006D31AD /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DB545B3D29427229006D31AD /* SpurgeonDailyWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DB545B0E29425320006D31AD /* SpurgeonDaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpurgeonDaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB545B1129425320006D31AD /* SpurgeonDailyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpurgeonDailyApp.swift; sourceTree = "<group>"; };
+		DB545B1329425320006D31AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DB545B1529425322006D31AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB545B1829425322006D31AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB545B2129425450006D31AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DB545B2829427225006D31AD /* SpurgeonDailyWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SpurgeonDailyWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB545B2A29427225006D31AD /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		DB545B2C29427226006D31AD /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		DB545B2F29427226006D31AD /* SpurgeonDailyWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpurgeonDailyWidgetBundle.swift; sourceTree = "<group>"; };
+		DB545B3129427226006D31AD /* SpurgeonDailyWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpurgeonDailyWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		DB545B3329427226006D31AD /* SpurgeonDailyWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpurgeonDailyWidget.swift; sourceTree = "<group>"; };
+		DB545B3529427226006D31AD /* SpurgeonDailyWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = SpurgeonDailyWidget.intentdefinition; sourceTree = "<group>"; };
+		DB545B3629427229006D31AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB545B3829427229006D31AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB8A73952A09777A00613260 /* quotes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = quotes.txt; path = SpurgeonDaily/quotes.txt; sourceTree = SOURCE_ROOT; };
+		DB8A73982A09777F00613260 /* quotes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quotes.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB545B0B29425320006D31AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB545B2529427225006D31AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB545B2D29427226006D31AD /* SwiftUI.framework in Frameworks */,
+				DB545B2B29427226006D31AD /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB545B0529425320006D31AD = {
+			isa = PBXGroup;
+			children = (
+				DB545B1029425320006D31AD /* SpurgeonDaily */,
+				DB545B2E29427226006D31AD /* SpurgeonDailyWidget */,
+				DB545B2929427225006D31AD /* Frameworks */,
+				DB545B0F29425320006D31AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB545B0F29425320006D31AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB545B0E29425320006D31AD /* SpurgeonDaily.app */,
+				DB545B2829427225006D31AD /* SpurgeonDailyWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB545B1029425320006D31AD /* SpurgeonDaily */ = {
+			isa = PBXGroup;
+			children = (
+				DB8A73982A09777F00613260 /* quotes.txt */,
+				DB545B2129425450006D31AD /* Info.plist */,
+				DB545B1129425320006D31AD /* SpurgeonDailyApp.swift */,
+				DB545B1329425320006D31AD /* ContentView.swift */,
+				DB545B1529425322006D31AD /* Assets.xcassets */,
+				DB545B1729425322006D31AD /* Preview Content */,
+			);
+			path = SpurgeonDaily;
+			sourceTree = "<group>";
+		};
+		DB545B1729425322006D31AD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DB545B1829425322006D31AD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DB545B2929427225006D31AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB545B2A29427225006D31AD /* WidgetKit.framework */,
+				DB545B2C29427226006D31AD /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB545B2E29427226006D31AD /* SpurgeonDailyWidget */ = {
+			isa = PBXGroup;
+			children = (
+				DB8A73952A09777A00613260 /* quotes.txt */,
+				DB545B2F29427226006D31AD /* SpurgeonDailyWidgetBundle.swift */,
+				DB545B3129427226006D31AD /* SpurgeonDailyWidgetLiveActivity.swift */,
+				DB545B3329427226006D31AD /* SpurgeonDailyWidget.swift */,
+				DB545B3529427226006D31AD /* SpurgeonDailyWidget.intentdefinition */,
+				DB545B3629427229006D31AD /* Assets.xcassets */,
+				DB545B3829427229006D31AD /* Info.plist */,
+			);
+			path = SpurgeonDailyWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB545B0D29425320006D31AD /* SpurgeonDaily */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB545B1C29425322006D31AD /* Build configuration list for PBXNativeTarget "SpurgeonDaily" */;
+			buildPhases = (
+				DB545B0A29425320006D31AD /* Sources */,
+				DB545B0B29425320006D31AD /* Frameworks */,
+				DB545B0C29425320006D31AD /* Resources */,
+				DB545B4129427229006D31AD /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB545B3C29427229006D31AD /* PBXTargetDependency */,
+			);
+			name = SpurgeonDaily;
+			productName = SpurgeonDaily;
+			productReference = DB545B0E29425320006D31AD /* SpurgeonDaily.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB545B2729427225006D31AD /* SpurgeonDailyWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB545B3E29427229006D31AD /* Build configuration list for PBXNativeTarget "SpurgeonDailyWidgetExtension" */;
+			buildPhases = (
+				DB545B2429427225006D31AD /* Sources */,
+				DB545B2529427225006D31AD /* Frameworks */,
+				DB545B2629427225006D31AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpurgeonDailyWidgetExtension;
+			productName = SpurgeonDailyWidgetExtension;
+			productReference = DB545B2829427225006D31AD /* SpurgeonDailyWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB545B0629425320006D31AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					DB545B0D29425320006D31AD = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					DB545B2729427225006D31AD = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = DB545B0929425320006D31AD /* Build configuration list for PBXProject "SpurgeonDaily" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB545B0529425320006D31AD;
+			productRefGroup = DB545B0F29425320006D31AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB545B0D29425320006D31AD /* SpurgeonDaily */,
+				DB545B2729427225006D31AD /* SpurgeonDailyWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB545B0C29425320006D31AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB545B1929425322006D31AD /* Preview Assets.xcassets in Resources */,
+				DB8A73992A09777F00613260 /* quotes.txt in Resources */,
+				DB545B1629425322006D31AD /* Assets.xcassets in Resources */,
+				DB8A73962A09777A00613260 /* quotes.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB545B2629427225006D31AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB545B3729427229006D31AD /* Assets.xcassets in Resources */,
+				DB8A73972A09777A00613260 /* quotes.txt in Resources */,
+				DB8A739A2A09777F00613260 /* quotes.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB545B0A29425320006D31AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB545B3A29427229006D31AD /* SpurgeonDailyWidget.intentdefinition in Sources */,
+				DB545B1429425320006D31AD /* ContentView.swift in Sources */,
+				DB545B1229425320006D31AD /* SpurgeonDailyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB545B2429427225006D31AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB545B3029427226006D31AD /* SpurgeonDailyWidgetBundle.swift in Sources */,
+				DB545B3229427226006D31AD /* SpurgeonDailyWidgetLiveActivity.swift in Sources */,
+				DB545B3429427226006D31AD /* SpurgeonDailyWidget.swift in Sources */,
+				DB545B3929427229006D31AD /* SpurgeonDailyWidget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB545B3C29427229006D31AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB545B2729427225006D31AD /* SpurgeonDailyWidgetExtension */;
+			targetProxy = DB545B3B29427229006D31AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DB545B1A29425322006D31AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB545B1B29425322006D31AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB545B1D29425322006D31AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SpurgeonDaily/SpurgeonDaily.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "SpurgeonDaily/Preview\\ Content";
+				DEVELOPMENT_TEAM = XH96ABQF45;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpurgeonDaily/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SpurgeonDaily;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewmilobruce.SpurgeonDaily;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB545B1E29425322006D31AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SpurgeonDaily/SpurgeonDaily.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "SpurgeonDaily/Preview\\ Content";
+				DEVELOPMENT_TEAM = XH96ABQF45;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpurgeonDaily/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SpurgeonDaily;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewmilobruce.SpurgeonDaily;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DB545B3F29427229006D31AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SpurgeonDailyWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XH96ABQF45;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpurgeonDailyWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SpurgeonDailyWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewmilobruce.SpurgeonDaily.SpurgeonDailyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB545B4029427229006D31AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SpurgeonDailyWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XH96ABQF45;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpurgeonDailyWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SpurgeonDailyWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewmilobruce.SpurgeonDaily.SpurgeonDailyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB545B0929425320006D31AD /* Build configuration list for PBXProject "SpurgeonDaily" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB545B1A29425322006D31AD /* Debug */,
+				DB545B1B29425322006D31AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB545B1C29425322006D31AD /* Build configuration list for PBXNativeTarget "SpurgeonDaily" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB545B1D29425322006D31AD /* Debug */,
+				DB545B1E29425322006D31AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB545B3E29427229006D31AD /* Build configuration list for PBXNativeTarget "SpurgeonDailyWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB545B3F29427229006D31AD /* Debug */,
+				DB545B4029427229006D31AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB545B0629425320006D31AD /* Project object */;
+}
